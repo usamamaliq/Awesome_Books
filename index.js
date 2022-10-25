@@ -1,3 +1,10 @@
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+}
+
 if (localStorage.getItem('Book List') === null) {
   localStorage.setItem('Book List', JSON.stringify([]));
 }
@@ -12,25 +19,33 @@ const displayBooks = () => {
   const booksContainer = document.querySelector('.books-container');
   booksContainer.innerHTML = '';
   for (let i = 0; i < bookList.length; i += 1) {
-    booksContainer.innerHTML += `<ul style="list-style: none; padding: 0;">
-      <li>${bookList[i].title}</li>
-      <li>${bookList[i].author}</li>
-      <button class="remove-button" onclick="removeBook(${i})">Remove</button><hr>
-      </ul>`;
+    if ((i % 2) === 0) {
+      booksContainer.innerHTML += `<div class="book-data grey"><ul>
+      <li>"${bookList[i].title}" by ${bookList[i].author}</li>
+      </ul>
+      <button class="remove-button" onclick="removeBook(${i})">Remove</button></div>`;
+    } else {
+      booksContainer.innerHTML += `<div class="book-data white"><ul>
+      <li>"${bookList[i].title}" by ${bookList[i].author}</li>
+      </ul>
+      <button class="remove-button" onclick="removeBook(${i})">Remove</button></div>`;
+    }
   }
 };
 
+const clearInput = () => {
+  document.querySelector('.book-title').value = '';
+  document.querySelector('.book-author').value = '';
+};
 const addBook = (bookTitle, bookAuthor) => {
   if (bookTitle === '' || bookAuthor === '') {
     alert('Fields cannot be empty');
   } else {
-    const books = {
-      title: bookTitle,
-      author: bookAuthor,
-    };
+    const books = new Book(bookTitle, bookAuthor);
     bookList.push(books);
     updateLocalStorage();
     displayBooks();
+    clearInput();
   }
 };
 

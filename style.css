@@ -1,3 +1,38 @@
 body {
   background-color: #fff;
 }
+
+.grey {
+  background-color: rgba(175, 184, 193, 0.2);
+}
+
+.white {
+  background-color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-container {
+  border: 1px solid black;
+  width: 40vw;
+}
+
+.book-data {
+  display: flex;
+  padding: 2.5px 5px 2.5px 5px;
+}
+
+.remove-button {
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

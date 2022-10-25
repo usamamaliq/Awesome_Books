@@ -2,7 +2,7 @@
 
 # Awesome Books 
 
-> This is an Awesome books project where a library has been made to add, remove and display books.
+> This is an Awesome books project where a library has been made to add, remove and display books using JS classes.
 
 ## Built With
 
@@ -53,14 +53,6 @@ N/A
 - Twitter: [@usamamaliq](https://twitter.com/usamamaliq)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/usamamaliq)
 
-👤 **Author1**
-
-- GitHub: [@adebsa2401](https://github.com/usamamaliq)
-- Twitter: [@adebsa2401](https://twitter.com/usamamaliq)
-- LinkedIn: [adebsa2401](https://linkedin.com/in/usamamaliq)
-
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -74,7 +66,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- 
 
 ## 📝 License
 
