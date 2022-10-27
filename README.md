@@ -2,7 +2,7 @@
 
 # Awesome Books 
 
-> This is an Awesome books project where a library has been made to add, remove and display books using JS classes.
+> This is a Single Page Application for Awesome books project where a library has been made to add, remove and display books using JS classes.
 
 ## Built With
 
